@@ -15,7 +15,8 @@ class Feed extends React.Component {
 
     fetchNextBatch() {
         this.props.fetchImages(this.state.startIdx)
-        this.setState = { startIdx: (this.state.startIdx += 9) }
+        let oldIdx = this.state.startIdx
+        this.setState = { startIdx: (oldIdx + 9) }
     }
     componentDidMount() {
         this.fetchNextBatch()

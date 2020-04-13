@@ -11,7 +11,9 @@ router.get("/:startIdx", (req, res) => {
 })
 
 
-
+// router.get("/news", (req, res) => {
+//     return json({})
+// })
 
 
 
